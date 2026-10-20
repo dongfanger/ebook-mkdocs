@@ -1,0 +1,37 @@
+.gitignore
+  s_e709f7850758c6::t_35ac9fa0b87d59 1-6
+docs/_static/css/extra.css
+  s_e709f7850758c6::t_caca81f8fa36a9 1-12
+docs/_static/js/lunr.zh.js
+  s_e709f7850758c6::t_0398b8ff0e47d7 1-74
+requirements.txt
+  s_e709f7850758c6::t_42f1c047129636 1-2
+scripts/gen_nav.py
+  s_249a2d517a902a::t_9e0f2afaceeafd 1-95
+serve.py
+  s_e709f7850758c6::t_7a939dd882718a 1-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "81127d920885c4bcba4d0f88ee361643f8fdcc2d",
+  "prompts": {},
+  "sessions": {
+    "s_249a2d517a902a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2b3533c3-3ec3-4b1f-807e-c97fe0caa0cb",
+        "model": "deepseek-v4-pro-ga-260813"
+      },
+      "human_author": "wanggang424 <wanggang424@jd.com>"
+    },
+    "s_e709f7850758c6": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "3f071cda-7540-454a-8e70-dbc5f23457d3",
+        "model": "deepseek-v4-pro-ga-260813"
+      },
+      "human_author": "wanggang424 <wanggang424@jd.com>"
+    }
+  }
+}
