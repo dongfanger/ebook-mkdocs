@@ -1,0 +1,32 @@
+site_name: My Docs
+site_description: 基于 mkdocs 的技术电子书
+
+theme:
+  name: readthedocs
+
+plugins:
+  - search:
+      lang: zh
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - attr_list
+
+# 扁平 URL(/xxx.html 而非 /xxx/)
+use_directory_urls: false
+
+# 自定义样式:blockquote 引用块(主题默认无样式)
+extra_css:
+  - _static/css/extra.css
+
+# 中文搜索:构建后用纯 JS 分词器覆盖默认 lunr.zh.js(修复 nodejieba 依赖导致的搜索失效)
+hooks:
+  - scripts/post_build.py
+
+nav:
+  - 简介: 简介.md
+  - 示例分类:
+      - 快速上手:
+        - 示例分类/快速上手/000001-快速上手mkdocs电子书.md
+        - 示例分类/快速上手/000002-图片引用示例.md
