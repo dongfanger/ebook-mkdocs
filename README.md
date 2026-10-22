@@ -5,7 +5,6 @@
 ## 特性
 
 - **自动生成导航**：按 `docs/` 下的「分类/子分类」目录结构自动生成 `mkdocs.yml`，无需手写 nav
-- **文章硬门禁校验**：发布前自动重写文章头部、整理图片、检查断链/孤儿图片
 - **中文搜索**：内置纯 JS 分词器，修复 mkdocs 默认 `nodejieba` 依赖导致的搜索失效
 - **一键预览/发布**：`serve.py` 本地预览，`deploy.py` 发布到 GitHub Pages
 
@@ -37,7 +36,6 @@ python3 -m venv .venv
 │   └── _static/          # 静态资源(extra.css / lunr.zh.js / favicon.ico)
 ├── scripts/
 │   ├── gen_nav.py        # 扫描 docs 生成 mkdocs.yml
-│   ├── verify.py         # 文章头部/图片校验(部署硬门禁)
 │   └── post_build.py     # 构建后 hook(中文搜索 + favicon)
 ├── serve.py              # 本地预览入口
 ├── deploy.py             # 部署入口
@@ -47,8 +45,7 @@ python3 -m venv .venv
 ## 文章命名约定
 
 - 用 `000001-标题.md` 这种 6 位数字前缀，导航按文件名自然排序
-- 无前缀的文件（如 `简介.md`）不会被 `verify.py` 校验
-- 文章内引用本地图片，`verify.py` 会自动归拢到 `assets/` 下并检查断链
+- 无前缀的文件（如 `简介.md`）不会进入分类目录的导航
 
 ## 目录顺序
 
