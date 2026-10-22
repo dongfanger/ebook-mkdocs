@@ -32,7 +32,6 @@ python3 -m venv .venv
 ```
 ├── docs/                 # 内容目录(mkdocs 默认,按分类/子分类组织)
 │   ├── 简介.md            # 首页
-│   ├── 关于本书.md        # 关于页
 │   └── _static/          # 静态资源(extra.css / lunr.zh.js / favicon.ico)
 ├── scripts/
 │   ├── gen_nav.py        # 扫描 docs 生成 mkdocs.yml
