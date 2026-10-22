@@ -1,0 +1,23 @@
+README.md
+  s_32639c16bf7b06::t_982ad11ae48165 48
+serve.py
+  s_32639c16bf7b06::t_0f8734e84ed0ad 2
+docs/示例分类/快速上手/000002-图片引用示例.md
+  s_32639c16bf7b06::t_2443ff1078497a 9
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "7f3ba34641d6552a10e7c8662890b6276b30f0c5",
+  "prompts": {},
+  "sessions": {
+    "s_32639c16bf7b06": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "0799ee31-bd7b-45fe-902d-5f48b093e6d3",
+        "model": "deepseek-v4-pro-ga-260813"
+      },
+      "human_author": "wanggang424 <wanggang424@jd.com>"
+    }
+  }
+}
